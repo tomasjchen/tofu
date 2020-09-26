@@ -7,7 +7,8 @@ spec:
     spec:
       volumes:
         - name: fake-server-conf
-          configMap: fake-server-conf
+          configMap:
+            name: fake-server-conf
       containers:
         - name: nginx
           env:
