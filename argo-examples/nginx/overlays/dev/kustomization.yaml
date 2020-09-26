@@ -8,3 +8,6 @@ configMapGenerator:
   - name: fake-server-conf
     files:
       - fake.conf
+
+patchesStrategicMerge:
+  - ngix-deployment.yaml
