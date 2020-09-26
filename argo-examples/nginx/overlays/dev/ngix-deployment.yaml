@@ -5,8 +5,15 @@ metadata:
 spec:
   template:
     spec:
+      volumes:
+        - name: fake-server-conf
+          configMap: fake-server-conf
       containers:
         - name: nginx
           env:
             - name: XXX
               value: cccc
+          volumeMounts:
+            - mountPath: /var/conf
+              name: fake-server-conf
+
