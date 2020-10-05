@@ -11,6 +11,7 @@ spec:
             name: fake-server-conf
       containers:
         - name: nginx
+          image: nginx-unavailable:1.14.2-unavailable
           env:
             - name: XXX
               value: cccc
