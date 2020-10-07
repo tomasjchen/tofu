@@ -9,5 +9,5 @@ spec:
     - name: http
       port: 80
   selector:
-    app: nginx-v3
+    app: nginx
   type: ClusterIP
