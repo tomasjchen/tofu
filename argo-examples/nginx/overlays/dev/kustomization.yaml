@@ -11,3 +11,4 @@ configMapGenerator:
 
 patchesStrategicMerge:
   - ngix-deployment.yaml
+  - ngix-service.yaml
